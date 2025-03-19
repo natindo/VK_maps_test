@@ -16,10 +16,10 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y libgtest-dev
-          cd /usr/src/gtest
+          cd /usr/src/googletest/googletest
           sudo cmake .
           sudo make
-          sudo cp *.a /usr/lib
+          sudo cp lib/*.a /usr/lib
 
       - name: Configure CMake
         run: cmake -S . -B build
