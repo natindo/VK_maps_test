@@ -1,6 +1,6 @@
 # GraphShortestPath
 
-This project implements a C++ program that calculates the shortest path distances from a given starting vertex in an undirected graph using the Breadth-First Search (BFS) algorithm. The graph is represented as an adjacency matrix, and graph data is read from a file.
+This project implements a C++ program that calculates the shortest path distances from a given starting vertex in an undirected graph using the Breadth-First Search (BFS) algorithm. The graph is represented as an adjacency matrix, and graph data is read from a file. VK maps intership.
 
 ## Features
 
