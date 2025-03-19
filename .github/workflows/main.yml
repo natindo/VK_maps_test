@@ -27,6 +27,13 @@ jobs:
       - name: Build project and tests
         run: cmake --build build --config Release
 
+  run_prog:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
       - name: Run main program
         run: |
           cd build
@@ -35,6 +42,13 @@ jobs:
           fi
           ./graph_program
 
+  run_tests:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        
       - name: Run tests
         run: |
           cd build
